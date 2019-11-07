@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="mal.js"></script>
+  <style>
+	.Menu{
+		font-family:Papyrus;
+		font-weight:strong;
+		font-size:20px;
+
+	}
+	a{
+		color:black;
+	}
+	.top-left {
+		position: absolute;
+		top: 580px;
+		left: 530px;
+		font-family:Britannic;
+		font-size:100px;
+		color:black;
+	}
+	span{
+		position:absolute;
+		left:40px;
+		color:white;
+		font-size:70px;
+		font-family:Cambria Math;
+	}
+	.choice{
+		position:absolute;
+		top:850px;
+		left:50px;
+		
+		width:1300px;
+		height:500px;
+	}
+	
+	#panel{
+		position:fixed;
+		overflow: hidden;
+		top:0px;
+	}
+	.cont{
+		font-size:20px;
+		font-family:Papyrus;
+		padding:20px;
+		color:grey;
+	}
+	.butn{
+		
+		font-size:15px;
+		font-family:Arial Rounded MT;
+		padding:10px;
+		color:black;
+		font-weight:strong;
+	}
+	.butn:hover{
+		color:white;
+		background-color:black;
+	}
+	#d1{
+		
+		height:600px;
+		
+		
+	}
+	#d2{
+		
+		height:600px;
+	}
+	#d3{
+		
+		height:600px;
+	}
+	
+	.dropbtn
+	{
+		background-color:Transparent;
+		font-family:Papyrus;
+		color: blue;
+		padding: 16px;
+		font-size:26px;
+		border: none;
+		
+	}
+	.dropdown 
+	{
+		position: relative;
+		display:inline-block;
+		
+	}
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f1f1f1;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+	}
+	.dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+	}
+	.dropdown-content a:hover {background-color: #ddd;}
+	.dropdown:hover .dropdown-content {display: block;}
+	.dropdown:hover .dropbtn {text-decoration: underline;}
+	
+	footer{
+		
+		width:100%;
+		height:400px;
+		position:absolute;
+		top:2940px;
+		background-color:lightgrey;
+	}
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+			
+			  <div class="top-left">OCEAN VOYAGE</div>
+			  <img src="water1.jpg" height="850px" width="1580px"/>
+			  <img src="logo.png" width="150px" height="150px" style="position:absolute;top:550px;left:380px;"/>
+			 
+</div>
+<div class="container choice">
+<div id="d1">
+	<img src="huse1.png" />
+	<a href="maldive.html"><img src="mc.jpg" width="500px" height="500px" style="border-radius:500px;position:absolute;left:450px;top:50px;"/></a>
+	<p style="font-family:Britannic;font-size:80px;color:lightgrey;position:absolute;left:550px;top:550px;">MALDIVES</p>
+	
+</div>
+<div id="d2">
+	<a href="palwana.html"><img src="palawan.jpg" width="500px" height="500px" style="border-radius:500px;position:absolute;left:450px;top:750px;"/></a>
+	<p style="font-family:Britannic;font-size:80px;color:lightgrey;position:absolute;left:550px;top:1250px;">PALAWAN</p>
+</div>
+<div id="d3">
+<a href="cook.html"><img src="cook.jpg" width="500px" height="500px" style="border-radius:500px;position:absolute;left:450px;top:1450px;"/></a>
+	<p style="font-family:Britannic;font-size:80px;color:lightgrey;position:absolute;left:550px;top:1950px;">COOK</p>
+	<img src="huse.png" style="position:absolute;left:1100px;top:1750px;"/>
+	
+</div>
+</div>
+
+<div class="panel panel-default" id="panel">
+  <div class="panel-heading" style="height:120px;padding:0px">
+	<div class="media">
+      <div class="media-left">
+		<a href="UI_UX_proj.html"><img src="logo.png" class="media-object" style="width:180px;padding-left:80px"></a>
+	  </div>
+      <div class="media-body media-right media-bottom Menu" style="padding-left:450px">
+		<a href="world.html">Our World</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<a href="maldive.html">Maldives</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<a href="palwana.html">Palawan</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<a href="cook.html">Cook Island</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<a href="gallery.html">Gallery</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+		<a href="#f1">Contact</a> 
+		</div>
+	</div>
+ </div>
+ </div>
+ <div class="dropdown">
+			<button class="dropbtn" style="position:fixed;top:67px;left:865px;">...</button>
+			<div class="dropdown-content" style="position:fixed;top:120px;left:790px;">
+				<a href="maldive.html">Discover Maldives</a>
+				<a href="maldive.html#ms">Sports</a>
+				<a href="maldive.html#rest1">Resorts</a>
+				<a href="#" data-toggle="modal" data-target="#myModal">Itinerary</a>
+			</div>
+		</div>
+		
+
+<div class="dropdown">
+			<button class="dropbtn" style="position:fixed;top:67px;left:995px;">...</button>
+			<div class="dropdown-content" style="position:fixed;top:120px;left:920px;">
+				<a href="palwana.html">Discover Palawan</a>
+				<a href="palwana.html#ms">Sports</a>
+				<a href="palwana.html#rest1">Resorts</a>
+				<a href="#" data-toggle="modal" data-target="#myModal">Itinerary</a>
+			</div>
+		</div>
+<div class="dropdown">
+			<button class="dropbtn" style="position:fixed;top:67px;left:1160px;">...</button>
+			<div class="dropdown-content" style="position:fixed;top:120px;left:1085px;">
+				<a href="cook.html">Discover Cook</a>
+				<a href="cook.html#ms">Sports</a>
+				<a href="cook.html#rest1">Resorts</a>
+				<a href="#" data-toggle="modal" data-target="#myModal">Itinerary</a>
+			</div>
+		</div>
+	<!-- Modal -->
+<div id="myModal" class="modal fade md">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" style="font-family:Papyrus;font-size:40px;">Maldives Itinerary</h4>
+      </div>
+      <div class="modal-body">
+        <p style="font-family:Papyrus;font-size:20px;">* Arrival to Male,Maldives Island.<br>* City Tour On Bike :Cool Way to Explore Male City.<br>* 5:30 a.m - Sunrise In Fehendhoo.<br>* Diving in Maldives...Underwater diving.<br>* Visit to inhibited Maldives Island having Blue Crystal clear Water<br>* Snorkelling in Maldives<br>Adventure Diving Course at Maldives<br>* Day Fishing Trip in Maldives<br>* Excursion and Resort Stay in Maldives<br>* Scuba Diving <br>* Sunset and Dolphin Tour </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal 1-->
+<div id="myModal1" class="modal fade md">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" style="font-family:Papyrus;font-size:40px;">Palawan Itinerary</h4>
+      </div>
+      <div class="modal-body">
+        <p style="font-family:Papyrus;font-size:20px;">* Puerto Princesa Subterranean River National Park<br>* Ugong Rock<br>* Puerto Princesa City Baywalk Park<br>* Snake Island<br>* Baker's Hill<br>Puerto Princesa Subterranean River<br>* Thumb Peak<br>* Papawyan Falls (Pamuayan Waterfalls)<br>* Sabang Mangrove Forest <br>* Sabang X Zipline </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal 2-->
+<div id="myModal2" class="modal fade md">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" style="font-family:Papyrus;font-size:40px;">Cook Itinerary</h4>
+      </div>
+      <div class="modal-body">
+        <p style="font-family:Papyrus;font-size:20px;">* Spectacular Over Water Night Show with Buffet Dinner at Muri Beach.<br>* Rarotonga Glass Bottom Lagoon Cruise.<br>* REEF SNORKELING TOUR<br>* Paddle Board Yoga in Muri Lagoon<br>* 'Explore' Rarotonga Cycle Tour with Lunch or Cocktail<br>* Snorkelling in Maldives<br>* AVA Sea Scooter Snorkel<br>* MOANA Sea Scooter Snorkel<br></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<footer id="f1"><a name='f1'/>
+	<img src="logo.png" class="media-object" style="width:110px;position:absolute;left:650px;">
+  <div style="position:absolute;top:150px;padding-left:50px;left:60px;">
+	<p><h3>OCEAN VOYAGE</h3></p>
+	<p><h4>Maldives</h4></p>
+	<p>Boduthakurufaanu Magu
+Male' 20125
+Republic of Maldives</p>
+<p>CONTACT:(960) 3333 186</p>
+<p>Visit:oceanVoyage@gmail.com</p>
+<p>Reservation:maldives@oceanvoyage.com</p>
+  </div>
+  <div style="position:absolute;top:150px;left:600px;padding-left:50px;">
+	<p><h3>OCEAN VOYAGE</h3></p>
+	<p><h4>Palawan</h4></p>
+	<p>Palawan island,Philippines</p>
+<p>CONTACT: +63 (02) 902 5980 </p>
+<p>Visit:oceanVoyage@gmail.com</p>
+<p>Reservation:palawan@oceanvoyage.com</p>
+  </div>
+  <div style="position:absolute;top:150px;left:1050px;padding-left:50px;">
+	<p><h3>OCEAN VOYAGE</h3></p>
+	<p><h4>Cook Island,</h4></p>
+	<p>RAROTONGA island,
+COOK ISLANDS
+New Zealand</p>
+<p>CONTACT:+(682) 8462 0110</p>
+<p>Visit:oceanVoyage@gmail.com</p>
+<p>Reservation:cook@oceanvoyage.com</p>
+  </div>
+</footer>
+</body>
+</html>

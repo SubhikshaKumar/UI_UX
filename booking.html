@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="book.js"></script>
+  <style>
+	.Menu{
+		font-family:Papyrus;
+		font-weight:strong;
+		font-size:20px;
+
+	}
+	a{
+		color:black;
+	}
+	
+	#panel{
+		position:fixed;
+		overflow: hidden;
+		top:0px;
+	}
+	
+	.dropbtn
+	{
+		background-color:Transparent;
+		font-family:Papyrus;
+		color: blue;
+		padding: 16px;
+		font-size:26px;
+		border: none;
+		
+	}
+	.dropdown 
+	{
+		position: relative;
+		display:inline-block;
+		
+	}
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f1f1f1;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+	}
+	.dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+	}
+	.dropdown-content a:hover {background-color: #ddd;}
+	.dropdown:hover .dropdown-content {display: block;}
+	.dropdown:hover .dropbtn {text-decoration: underline;}
+	
+	.d1{
+	position:absolute;
+	left:300px;
+	top:150px;
+	border:1px solid black;
+	color:white;
+	width:1000px;
+	height:900px;
+	background-color:black;
+	padding:70px;
+	opacity: 0.8;
+    filter: alpha(opacity=60); 
+	}
+	select{
+	color:black;
+	font-size:15px;
+	}
+	
+	form{
+	font-family:Papyrus;
+	font-size:20px;	
+	}
+	  </style>
+</head>
+<body style="background-image: url('rom.png');background-repeat: no-repeat;">
+<div class="d1">
+<p style="font-family:Britannic;font-size:30px;">YOUR DETAILS..!</p>
+<p style="font-family:Papyrus;;font-size:15px;">Fields marked with a * are Mandatory</p><br>
+<form name="myForm">
+<div class="form-group">
+  <label for="firstname">FirstName *</label>
+  <input type="text" class="form-control" id="firstname" style="width:250px;" placeholder="Enter FirstName" required>
+  </div>
+<div class="form-group" style="position:absolute;top:175px;left:400px;">
+  <label for="lastname">LastName *</label>
+  <input type="text" class="form-control" id="lastname" style="width:250px;" placeholder="Enter LastName" required>
+</div><br>
+<div class="form-group">
+    <label for="email">Email address *</label>
+    <input type="email" class="form-control" id="email" style="width:250px;" placeholder="Enter email id" required>
+  </div>
+<div class="form-group" style="position:absolute;top:285px;left:400px;">
+    <label for="phno">Phone Number *</label>
+    <input type="tel" class="form-control" id="phno" style="width:250px;" placeholder="Enter phone number" pattern="/^\d{10}$/" required>
+  </div>  <br>
+ <p style="font-family:Britannic;font-size:30px;">CHOOSE DESTINATION..!</p>
+ <div class="radio">
+  <label class="radio-inline"><input type="radio" name="optradio" checked>Maldives</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label class="radio-inline"><input type="radio" name="optradio">Palawan</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<label class="radio-inline"><input type="radio" name="optradio">Cook Island</label>
+</div>
+<label for="resort">Resorts</label>
+  <select class="custom-select" id="resort" required>
+    <option value="Kuredu">Kuredu Resort</option>
+    <option value="Furaveri">Furaveri Island Resort</option>
+    <option value="Paradise">Paradise Island Resort</option>
+  </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <label for="resort">Resorts</label>
+  <select class="custom-select" id="resort" required>
+    <option value="Blue">Blue Palawan Beach Club</option>
+    <option value="Nido">El Nido Resort</option>
+    <option value="Sheridan">Sheridan Resort</option>
+  </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <label for="resort">Resorts</label>
+  <select class="custom-select" id="resort" required>
+    <option value="Sanctuary">Sanctuary Rarotonga</option>
+    <option value="Etu">Etu Moana Resort</option>
+    <option value="Edgewater">The Edgewater Resort</option>
+  </select><br><br>
+<div class="form-group">
+<label for="date">Date</label>
+<input class="form-control" type="date" value="2019-11-19" id="date" style="width:250px;">
+</div><br>
+<p style="font-family:Britannic;font-size:20px;">ROOM 1</p><span style="font-family:Papyrus;;font-size:20px;">Adult</span>
+<div class="form-group">
+ <br> <label for="fname">FirstName *</label>
+  <input type="text" class="form-control" id="fname" style="width:250px;" placeholder="Enter FirstName" required>
+  </div>
+  <div class="form-group" style="position:absolute;top:720px;left:400px;">
+ <br> <label for="proof">Id Proof *</label>
+  <input type="text" class="form-control" id="proof" style="width:250px;" placeholder="Enter Id Proof" required>
+  </div>
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+</div>
+
+<div class="panel panel-default" id="panel">
+  <div class="panel-heading" style="height:120px;padding:0px">
+	<div class="media">
+      <div class="media-left">
+		<a href="UI_UX_proj.html"><img src="logo.png" class="media-object" style="width:180px;padding-left:80px"></a>
+	  </div>
+      <div class="media-body media-right media-bottom Menu" style="padding-left:450px">
+		<a href="world.html">Our World</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<a href="maldive.html">Maldives</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<a href="palwana.html">Palawan</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<a href="cook.html">Cook Island</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<a href="gallery.html">Gallery</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+		<a href="#f1">Contact</a> 
+		</div>
+	</div>
+ </div>
+ </div>
+ <div class="dropdown">
+			<button class="dropbtn" style="position:fixed;top:67px;left:865px;">...</button>
+			<div class="dropdown-content" style="position:fixed;top:120px;left:790px;">
+				<a href="maldive.html">Discover Maldives</a>
+				<a href="maldive.html#ms">Sports</a>
+				<a href="maldive.html#rest1">Resorts</a>
+				<a href="#" data-toggle="modal" data-target="#myModal">Itinerary</a>
+			</div>
+		</div>
+		
+
+<div class="dropdown">
+			<button class="dropbtn" style="position:fixed;top:67px;left:995px;">...</button>
+			<div class="dropdown-content" style="position:fixed;top:120px;left:920px;">
+				<a href="palwana.html">Discover Palawan</a>
+				<a href="palwana.html#ms">Sports</a>
+				<a href="palwana.html#rest1">Resorts</a>
+				<a href="#" data-toggle="modal" data-target="#myModal">Itinerary</a>
+			</div>
+		</div>
+<div class="dropdown">
+			<button class="dropbtn" style="position:fixed;top:67px;left:1160px;">...</button>
+			<div class="dropdown-content" style="position:fixed;top:120px;left:1085px;">
+				<a href="cook.html">Discover Cook</a>
+				<a href="cook.html#ms">Sports</a>
+				<a href="cook.html#rest1">Resorts</a>
+				<a href="#" data-toggle="modal" data-target="#myModal">Itinerary</a>
+			</div>
+		</div>
+	<!-- Modal -->
+<div id="myModal" class="modal fade md">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" style="font-family:Papyrus;font-size:40px;">Maldives Itinerary</h4>
+      </div>
+      <div class="modal-body">
+        <p style="font-family:Papyrus;font-size:20px;">* Arrival to Male,Maldives Island.<br>* City Tour On Bike :Cool Way to Explore Male City.<br>* 5:30 a.m - Sunrise In Fehendhoo.<br>* Diving in Maldives...Underwater diving.<br>* Visit to inhibited Maldives Island having Blue Crystal clear Water<br>* Snorkelling in Maldives<br>Adventure Diving Course at Maldives<br>* Day Fishing Trip in Maldives<br>* Excursion and Resort Stay in Maldives<br>* Scuba Diving <br>* Sunset and Dolphin Tour </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal 1-->
+<div id="myModal1" class="modal fade md">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" style="font-family:Papyrus;font-size:40px;">Palawan Itinerary</h4>
+      </div>
+      <div class="modal-body">
+        <p style="font-family:Papyrus;font-size:20px;">* Puerto Princesa Subterranean River National Park<br>* Ugong Rock<br>* Puerto Princesa City Baywalk Park<br>* Snake Island<br>* Baker's Hill<br>Puerto Princesa Subterranean River<br>* Thumb Peak<br>* Papawyan Falls (Pamuayan Waterfalls)<br>* Sabang Mangrove Forest <br>* Sabang X Zipline </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal 2-->
+<div id="myModal2" class="modal fade md">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" style="font-family:Papyrus;font-size:40px;">Cook Itinerary</h4>
+      </div>
+      <div class="modal-body">
+        <p style="font-family:Papyrus;font-size:20px;">* Spectacular Over Water Night Show with Buffet Dinner at Muri Beach.<br>* Rarotonga Glass Bottom Lagoon Cruise.<br>* REEF SNORKELING TOUR<br>* Paddle Board Yoga in Muri Lagoon<br>* 'Explore' Rarotonga Cycle Tour with Lunch or Cocktail<br>* Snorkelling in Maldives<br>* AVA Sea Scooter Snorkel<br>* MOANA Sea Scooter Snorkel<br></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>

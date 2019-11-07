@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="jvScr.js"></script>
+  <style>
+	.Menu{
+		font-family:Papyrus;
+		font-weight:strong;
+		font-size:20px;
+	}
+	a{
+		color:black;
+	}
+	.top-left {
+		position: absolute;
+		top:100px;
+		left: 36px;
+		font-family:Britannic;
+		font-size:100px;
+		color:lightgrey;
+	}
+	span{
+		position:absolute;
+		left:40px;
+		color:lightpink;
+		font-size:70px;
+		font-family:Cambria Math;
+	}
+	
+	
+	.choice{
+		position:absolute;
+		top:850px;
+		left:50px;
+		width:1300px;
+		height:500px;
+	}
+	#myVideo {
+		position: absolute;
+		top:125px;
+		left:450px;
+		min-width:1500px;
+		height:700px;
+	}
+	#panel{
+		position:fixed;
+		overflow: hidden;
+	}
+	.cont{
+		font-size:20px;
+		font-family:Papyrus;
+		padding:20px;
+		color:grey;
+	}
+	.butn{
+		
+		font-size:15px;
+		font-family:Arial Rounded MT;
+		padding:10px;
+		color:black;
+		font-weight:strong;
+	}
+	.butn:hover{
+		color:white;
+		background-color:black;
+	}
+	#set{
+	
+	position:absolute;
+	top:130px;
+	width:1550px;
+	height:700px;
+	}
+	.dropbtn
+	{
+		background-color:Transparent;
+		font-family:Papyrus;
+		color: blue;
+		padding: 16px;
+		font-size:26px;
+		border: none;
+		
+	}
+	.dropdown 
+	{
+		position: relative;
+		display:inline-block;
+		
+	}
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f1f1f1;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		
+	}
+	.dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+	}
+	.dropdown-content a:hover {background-color: #ddd;}
+
+	.dropdown:hover .dropdown-content {display: block;}
+
+	.dropdown:hover .dropbtn {text-decoration: underline;}
+
+  </style>
+ 
+</head>
+<body>
+
+<div class="container-fluid" id="man" >
+	<div id="set">
+		<div class="top-left">OUR WORLD<br><span><p onmouseover="funMal('set')">MALDIVES</p><p onmouseover="funPal('set')">PALAWAN</p><p onmouseover="funCok('set')">COOK</p></span></div>
+</div>
+</div>
+<div class="container choice">
+	<div class="media">
+  <div class="media-left">
+    <a href="maldive.html"><img src="mal.png" class="media-object" style="width:520px;height:600px;left:20px"></a>
+  </div>
+  <div class="media-body media-middle">
+    <h4 class="media-heading" style="font-family:Papyrus;font-size:30px;font-weight:strong;">MALDIVES</h4>
+    <p class="cont">The Maldives are home to some of the world's most ravishing islands, but it's the sea, which truly makes these islands shine. Luminous aquamarine waters with a crystal clarity lap upon these dazzling white shores, which barely peek above the Indian Ocean. Consisting of 26 natural atolls, the Maldives archipelago is the planet's lowest lying nation, rising no more than three meters above the sea at its highest point, a measurement that shrinks every year. Beneath the mesmerizing waters, coral reefs flourish, luring divers and snorkelers from around the world. Surfers also flock here to ride the uncrowded breaks. Back on land, luxury resorts provide the perfect launching points for adventures focused upon the sea, the archipelago's greatest asset, but also, as the planet's climate changes, its single greatest threat.</p>
+    <a href="booking.html"><<button type="button" class="btn btn-default butn" style="position:absolute;left:120px;top:550px;">Direct Booking</button></a>
+	<a href="maldive.html"><button type="button" class="btn btn-default butn" style="position:absolute;left:280px;top:550px;">Discover Maldives</button></a>
+  </div>
+</div>
+<div class="media">
+  <div class="media-body media-middle">
+    <h4 class="media-heading" style="font-family:Papyrus;font-size:30px;font-weight:strong;">PALAWAN</h4>
+    <p class="cont">Palawan is the Philippine's answer to paradise. This island province stretches southwest to Borneo with lush limestone peaks rising from a jewel-like sea so clear, that you can almost see the expressions on the fish from above the surface. Slivers of gleaming white sand fringed with rustling palms rim many of these jungle-clad islands, while under the water, coral reefs flourish with an impressive diversity of tropical fish, offering some of the best diving in the world. Other attractions include the islands' unique wildlife, emerald lakes, and quaint fishing villages. Coron is home to plush resorts, and El Nido drips with natural beauty and is one of the most alluring islands in the chain. From here, you can island hop around the spectacular Bacuit archipelago. One of Palawan's top attractions is the World Heritage-listed Puerto Princesa Subterranean River National Park, an impressive limestone cave system with a long underground river.</p>
+	<a href="booking.html"><<button type="button" class="btn btn-default butn" style="position:absolute;left:820px;top:1200px;">Direct Booking</button></a>
+	<a href="palwana.html"><button type="button" class="btn btn-default butn" style="position:absolute;left:980px;top:1200px;">Discover Palawan</button></a>
+  </div>
+    <div class="media-right">
+    <a href="palwana.html"><img src="palawan.png" class="media-object" style="width:550px;height:600px;left:20px"></a>
+  </div>
+</div>
+<div class="media">
+  <div class="media-left">
+    <a href="cook.html"><img src="cook.png" class="media-object" style="width:520px;height:600px;left:20px"></a>
+  </div>
+  <div class="media-body media-middle">
+    <h4 class="media-heading" style="font-family:Papyrus;font-size:30px;font-weight:strong;">COOK ISLAND</h4>
+    <p class="cont">The Cook Islands are for you. Strung between French Polynesia and Samoa but with strong ties to New Zealand, the archipelago's 15 islands are known for their enticing aquamarine lagoons, palm-fringed beaches, and volcanic peaks. Best of all, the locals are among the friendliest in the South Pacific. Rarotonga is the main tourist hub, with its many resorts, lush peaks, and plentiful beaches. Aitutaki boasts the beauty of Bora Bora, without the price tag. Hibiscus-laced villages snuggle on the hillsides, and along its heavenly lagoon lie 21 motus or small islets, many within kayak distance of the resorts. Ensconce yourself here in an over-the-water bungalow or hole up in a rustic beach shack on a remote out island and live your Robinson Crusoe fantasies.</p>
+	 <a href="booking.html"><<button type="button" class="btn btn-default butn" style="position:absolute;left:120px;top:1780px;">Direct Booking</button></a>
+	<a href="cook.html"><button type="button" class="btn btn-default butn" style="position:absolute;left:280px;top:1780px;">Discover Cook</button></a>
+  </div>
+</div>
+</div>
+<div class="panel panel-default" id="panel">
+  <div class="panel-heading" style="height: 120px;padding:0">
+	<div class="media">
+      <div class="media-left">
+		<a href="UI_UX_proj.html"><img src="logo.png" class="media-object" style="width:180px;padding-left:80px"></a>
+	  </div>
+      <div class="media-body media-right media-bottom Menu" style="padding-left:300px">
+		<a href="world.html">Our World</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<a href="maldive.html">Maldives</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<a href="palwana.html">Palawan</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<a href="cook.html">Cook Island</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<a href="gallery.html">Gallery</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 
+		<a href="UI_UX_proj.html#f1">Contact</a>
+		</div>
+	</div>
+ </div>
+ </div>
+ <div class="dropdown">
+			<button class="dropbtn" style="position:fixed;top:67px;left:715px;">...</button>
+			<div class="dropdown-content" style="position:fixed;top:120px;left:640px;">
+				<a href="maldive.html">Discover Maldives</a>
+				<a href="maldive.html#ms">Sports</a>
+				<a href="maldive.html#rest1">Resorts</a>
+				<a href="#" data-toggle="modal" data-target="#myModal">Itinerary</a>
+			</div>
+		</div>
+		
+
+<div class="dropdown">
+			<button class="dropbtn" style="position:fixed;top:67px;left:845px;">...</button>
+			<div class="dropdown-content" style="position:fixed;top:120px;left:770px;">
+				<a href="palwana.html">Discover Palawan</a>
+				<a href="palwana.html#ms">Sports</a>
+				<a href="palwana.html#rest1">Resorts</a>
+				<a href="#" data-toggle="modal" data-target="#myModal">Itinerary</a>
+			</div>
+		</div>
+<div class="dropdown">
+			<button class="dropbtn" style="position:fixed;top:67px;left:1010px;">...</button>
+			<div class="dropdown-content" style="position:fixed;top:120px;left:935px;">
+				<a href="cook.html">Discover Cook</a>
+				<a href="cook.html#ms">Sports</a>
+				<a href="cook.html#rest1">Resorts</a>
+				<a href="#" data-toggle="modal" data-target="#myModal">Itinerary</a>
+			</div>
+		</div>
+	<!-- Modal -->
+<div id="myModal" class="modal fade md">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" style="font-family:Papyrus;font-size:40px;">Maldives Itinerary</h4>
+      </div>
+      <div class="modal-body">
+        <p style="font-family:Papyrus;font-size:20px;">* Arrival to Male,Maldives Island.<br>* City Tour On Bike :Cool Way to Explore Male City.<br>* 5:30 a.m - Sunrise In Fehendhoo.<br>* Diving in Maldives...Underwater diving.<br>* Visit to inhibited Maldives Island having Blue Crystal clear Water<br>* Snorkelling in Maldives<br>Adventure Diving Course at Maldives<br>* Day Fishing Trip in Maldives<br>* Excursion and Resort Stay in Maldives<br>* Scuba Diving <br>* Sunset and Dolphin Tour </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal 1-->
+<div id="myModal1" class="modal fade md">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" style="font-family:Papyrus;font-size:40px;">Palawan Itinerary</h4>
+      </div>
+      <div class="modal-body">
+        <p style="font-family:Papyrus;font-size:20px;">* Puerto Princesa Subterranean River National Park<br>* Ugong Rock<br>* Puerto Princesa City Baywalk Park<br>* Snake Island<br>* Baker's Hill<br>Puerto Princesa Subterranean River<br>* Thumb Peak<br>* Papawyan Falls (Pamuayan Waterfalls)<br>* Sabang Mangrove Forest <br>* Sabang X Zipline </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal 2-->
+<div id="myModal2" class="modal fade md">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title" style="font-family:Papyrus;font-size:40px;">Cook Itinerary</h4>
+      </div>
+      <div class="modal-body">
+        <p style="font-family:Papyrus;font-size:20px;">* Spectacular Over Water Night Show with Buffet Dinner at Muri Beach.<br>* Rarotonga Glass Bottom Lagoon Cruise.<br>* REEF SNORKELING TOUR<br>* Paddle Board Yoga in Muri Lagoon<br>* 'Explore' Rarotonga Cycle Tour with Lunch or Cocktail<br>* Snorkelling in Maldives<br>* AVA Sea Scooter Snorkel<br>* MOANA Sea Scooter Snorkel<br></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
